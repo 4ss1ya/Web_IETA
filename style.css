@@ -1,18 +1,49 @@
 :root {
+  --dl-color-iris-60: rgba(165, 166, 246, 1);
+  --dl-color-iris-80: rgba(120, 121, 241, 1);
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-900: #D9D9D9;
+  --dl-color-iris-100: rgba(93, 95, 239, 1);
+  --dl-color-iris-601: rgba(165, 166, 246, 1);
+  --dl-color-iris-602: rgba(165, 166, 246, 1);
+  --dl-color-iris-603: rgba(165, 166, 246, 1);
+  --dl-color-iris-604: rgba(165, 166, 246, 1);
+  --dl-color-iris-605: rgba(165, 166, 246, 1);
+  --dl-color-iris-801: rgba(120, 121, 241, 1);
+  --dl-color-iris-802: rgba(120, 121, 241, 1);
+  --dl-color-iris-803: rgba(120, 121, 241, 1);
+  --dl-color-iris-804: rgba(120, 121, 241, 1);
+  --dl-color-iris-805: rgba(120, 121, 241, 1);
+  --dl-color-iris-1001: rgba(93, 95, 239, 1);
+  --dl-color-iris-1002: rgba(93, 95, 239, 1);
+  --dl-color-iris-1003: rgba(93, 95, 239, 1);
+  --dl-color-iris-1004: rgba(93, 95, 239, 1);
+  --dl-color-iris-1005: rgba(93, 95, 239, 1);
   --dl-size-size-large: 144px;
   --dl-size-size-small: 48px;
   --dl-color-danger-300: #A22020;
   --dl-color-danger-500: #BF2626;
   --dl-color-danger-700: #E14747;
+  --dl-color-fuschia-60: rgba(252, 221, 236, 1);
+  --dl-color-fuschia-80: rgba(241, 120, 182, 1);
   --dl-color-gray-black: #000000;
   --dl-color-gray-white: #FFFFFF;
   --dl-size-size-medium: 96px;
   --dl-size-size-xlarge: 192px;
   --dl-size-size-xsmall: 16px;
   --dl-space-space-unit: 16px;
+  --dl-color-fuschia-100: rgba(239, 93, 168, 1);
+  --dl-color-fuschia-601: rgba(252, 221, 236, 1);
+  --dl-color-fuschia-602: rgba(252, 221, 236, 1);
+  --dl-color-fuschia-603: rgba(252, 221, 236, 1);
+  --dl-color-fuschia-604: rgba(252, 221, 236, 1);
+  --dl-color-fuschia-605: rgba(252, 221, 236, 1);
+  --dl-color-fuschia-801: rgba(241, 120, 182, 1);
+  --dl-color-fuschia-802: rgba(241, 120, 182, 1);
+  --dl-color-fuschia-803: rgba(241, 120, 182, 1);
+  --dl-color-fuschia-804: rgba(241, 120, 182, 1);
+  --dl-color-fuschia-805: rgba(241, 120, 182, 1);
   --dl-color-primary-100: #003EB3;
   --dl-color-primary-300: #0074F0;
   --dl-color-primary-500: #14A9FF;
@@ -21,6 +52,11 @@
   --dl-color-success-500: #32A94C;
   --dl-color-success-700: #4CC366;
   --dl-size-size-xxlarge: 288px;
+  --dl-color-fuschia-1001: rgba(239, 93, 168, 1);
+  --dl-color-fuschia-1002: rgba(239, 93, 168, 1);
+  --dl-color-fuschia-1003: rgba(239, 93, 168, 1);
+  --dl-color-fuschia-1004: rgba(239, 93, 168, 1);
+  --dl-color-fuschia-1005: rgba(239, 93, 168, 1);
   --dl-size-size-maxwidth: 1400px;
   --dl-radius-radius-round: 50%;
   --dl-space-space-halfunit: 8px;
@@ -76,6 +112,112 @@
   display: flex !important;
   transform: none !important;
 }
+.Heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Body {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.Header11 {
+  font-size: 34px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header12 {
+  font-size: 34px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Body4 {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.Body1 {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.Body3 {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.Header15 {
+  font-size: 34px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header24 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Body5 {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.Body2 {
+  font-size: 13px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.Header22 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header14 {
+  font-size: 34px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header1 {
+  font-size: 34px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header23 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
 .Content {
   font-size: 16px;
   font-family: Inter;
@@ -84,11 +226,31 @@
   text-transform: none;
   text-decoration: none;
 }
-.Heading {
-  font-size: 32px;
-  font-family: Inter;
-  font-weight: 700;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
+.Header13 {
+  font-size: 34px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header25 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header21 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
+}
+.Header2 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Work Sans;
+  font-weight: 700px;
+  font-stretch: normal;
 }

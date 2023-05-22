@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Список игроков</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #ff4655;
+    }
+    
+    /* Стили для списка */
+    ul {
+      margin-top: 30px;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Стили для таблицы */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #ff4655;
+      color: #fff;
+    }
+    
+    td {
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Список игроков</h1>
+  <ul id="player-list"></ul>
+
+  <script>
+    // Данные игроков
+    var ranks = ["Железо", "Бронза", "Серебро","Золото","Платина","Алмаз","Рассвет"];
+  var randomElement = ranks[Math.floor(Math.random() * ranks.length)];
+
+    var players = [
+      { номер: 1, никнейм: "Myilse", уровень: 54, ранг: randomElement, время: "121 ч.", друзей: 13 },
+      { номер: 2, никнейм: "Izim", уровень: 43, ранг: randomElement, время: "89 ч.", друзей: 10 },
+      { номер: 3, никнейм: "Kesha", уровень: 76, ранг: randomElement, время: "156 ч.", друзей: 17 },
+      { номер: 4, никнейм: "Assyia", уровень: 10, ранг: randomElement, время: "11 ч.", друзей: 5 },
+      
+      ];
+    
+    // Функция для создания элементов списка на основе данных игроков
+    function createPlayerList() {
+      var playerList = document.getElementById("player-list");
+        
+      // Создание заголовков таблицы
+      var table = document.createElement("table");
+      var tableHeaderRow = document.createElement("tr");
+      
+      for (var key in players[0]) {
+        var tableHeaderCell = document.createElement("th");
+        tableHeaderCell.textContent = key;
+        tableHeaderRow.appendChild(tableHeaderCell);
+      }
+      
+      table.appendChild(tableHeaderRow);
+      
+      // Добавление данных игроков в таблицу
+      players.forEach(function(player) {
+        var tableRow = document.createElement("tr");
+        
+        for (var key in player) {
+          var tableCell = document.createElement("td");
+          tableCell.textContent = player[key];
+          tableRow.appendChild(tableCell);
+        }
+        
+        table.appendChild(tableRow);
+      });
+      
+      // Добавление таблицы в список
+      var listItem = document.createElement("li");
+      listItem.appendChild(table);
+      playerList.appendChild(listItem);
+    }
+    
+    // Вызов функции для создания списка игроков при загрузке страницы
+    window.onload = function() {
+      createPlayerList();
+    };
+  </script>
+</body>
+</html>
